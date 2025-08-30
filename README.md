@@ -24,8 +24,9 @@
 ---
 
 
-## Business Question
+### Business Question
 Corporación Favorita’s operations and merchandising teams noticed spikes around Ecuadorian paydays (15th and end-of-month), when most workers get paid. 
+Understanding whether these spikes are real and quantifiable is key for planning and resource allocation.  
 
 Key questions are:
 - **Do sales actually increase during these periods, and by how much? ?**  
@@ -34,15 +35,22 @@ Key questions are:
 
 
   
-## Project Overview
-## Data Sources
-## Tools & Stack
-## Data Preparation
-## Exploratory Data Analysis (EDA)
-## Key Findings
-## Recommendations
-## Limitations
-## References & Repo Map
+### Project Overview
+
+This project analyzes transactional data from Corporación Favorita, one of Ecuador’s largest grocery retailers, to measure the impact of payday on consumer demand.  
+Using time-series modeling and causal inference (CausalImpact), the analysis tests whether sales significantly increase around the 15th and end of each month, and quantifies the magnitude of the lift across product categories and store clusters.  
+
+The results provide operators with evidence-based guidance on when to increase inventory, adjust promotion schedules, and optimize staffing, turning anecdotal observations into actionable business strategy.  
+
+
+### Data Sources
+### Tools & Stack
+### Data Preparation
+### Exploratory Data Analysis (EDA)
+### Key Findings
+### Recommendations
+### Limitations
+### References & Repo Map
 
 
 
@@ -61,7 +69,7 @@ Key questions are:
 
 ---
 
- ## Installation
+ ### Installation
 Clone the repository and install dependencies:
 
 ```bash
@@ -74,19 +82,19 @@ pip install -r requirements.txt
 ```
 
 
- ## Usage
+ ### Usage
 Run the full pipeline:
 
 ```bash
 python scripts/run_pipeline.py
 ```
 
- ## Contributing
+ ### Contributing
 This is a **portfolio project** created to showcase data engineering and data science workflows.  
 Issues and pull requests are not actively monitored.  
 You are welcome to fork the repository for your own learning or adaptation.
 
 
- ## License
+ ### License
 This project is licensed under the [MIT License](./LICENSE).
 
