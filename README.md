@@ -23,22 +23,17 @@
 
 ---
 
-<details>
-<summary><h2> Project Setup (click to expand)</h2></summary>
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-</details>
-
----
-
 
 ## Business Question
+Corporación Favorita’s operations and merchandising teams noticed spikes around Ecuadorian paydays (15th and end-of-month), when most workers get paid. 
+
+Key questions are:
+- **Do sales actually increase during these periods, and by how much? ?**  
+- **Which categories and stores experience the largest lift?**  
+- **How can these insights guide inventory planning, promotion timing, and staffing decisions?**
 
 
+  
 ## Project Overview
 ## Data Sources
 ## Tools & Stack
@@ -50,16 +45,48 @@
 ## References & Repo Map
 
 
-## Installation
-## Usage
-## Contributing
-## License
+
+---
+
+<details>
+<summary><h2> Project Setup (click to expand)</h2></summary>
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+</details>
 
 
+---
+
+ ## Installation
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/Datayx/Payday-surge-favorita.git
+cd payday-surge-favorita
+python -m venv .venv
+source .venv/bin/activate      
+pip install -r requirements.txt
+
+```
 
 
+ ## Usage
+Run the full pipeline:
+
+```bash
+python scripts/run_pipeline.py
+```
+
+ ## Contributing
+This is a **portfolio project** created to showcase data engineering and data science workflows.  
+Issues and pull requests are not actively monitored.  
+You are welcome to fork the repository for your own learning or adaptation.
 
 
-
-
+ ## License
+This project is licensed under the [MIT License](./LICENSE).
 
