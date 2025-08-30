@@ -38,7 +38,7 @@ Key questions are:
 ### Project Overview
 
 This project analyzes transactional data from Corporación Favorita, one of Ecuador’s largest grocery retailers, to measure the impact of payday on consumer demand.  
-Using time-series modeling and causal inference (CausalImpact), the analysis tests whether sales significantly increase around the 15th and end of each month, and quantifies the magnitude of the lift across product categories and store clusters.  
+Using time-series modeling and causal inference (Causal Impact), the analysis tests whether sales significantly increase around the 15th and end of each month, and quantifies the magnitude of the lift across product categories and store clusters.  
 
 The results provide operators with evidence-based guidance on when to increase inventory, adjust promotion schedules, and optimize staffing, turning anecdotal observations into actionable business strategy.  
 
