@@ -37,13 +37,21 @@ Key questions are:
   
 ### Project Overview
 
-This project analyzes transactional data from Corporación Favorita, one of Ecuador’s largest grocery retailers, to measure the impact of payday on consumer demand.  
-Using time-series modeling and causal inference (Causal Impact), the analysis tests whether sales significantly increase around the 15th and end of each month, and quantifies the magnitude of the lift across product categories and store clusters.  
+This project analyzes **4.6 years of daily sales** across **54 stores** and **4036 product categorie**s to detect **reliable demand patterns.**
 
-The results provide operators with evidence-based guidance on when to increase inventory, adjust promotion schedules, and optimize staffing, turning anecdotal observations into actionable business strategy.  
+The objective is to apply **time-series modeling** and **causal inference** to quantify whether sales **significantly increase around payday periods (15th and end of month)**, and to measure the **magnitude of the lift** across **product categories** and **store clusters.** External signals such as **holidays, oil prices,** and **store transactions** are incorporated to **capture demand fluctuations.**
+
+The analysis provides evidence-based guidance on when to **increase inventory, adjust promotion schedules,** and **optimize staffing,** turning raw transaction data into actionable business strategy.
 
 
 ### Data Sources
+Dataset used in this project: [Corporación Favorita Grocery Sales Forecasting](https://www.kaggle.com/competitions/favorita-grocery-sales-forecasting/data)
+
+
+> [!NOTE]
+> All files are provided in ``` .7z ``` compressed format on Kaggle. The uncompressed, unzipped files ``` .csv ``` files are used throughout this project.
+
+
 ### Tools & Stack
 ### Data Preparation
 ### Exploratory Data Analysis (EDA)
