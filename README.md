@@ -39,7 +39,7 @@ Key questions are:
 
 This project analyzes **4.6 years of daily sales** across **54 stores** and **4036 product categorie**s to detect **reliable demand patterns.**
 
-The objective is to apply **time-series modeling** and **causal inference** to quantify whether sales **significantly increase around payday periods (15th and end of month)**, and to measure the **magnitude of the lift** across **product categories** and **store clusters.** External signals such as **holidays, oil prices,** and **store transactions** are incorporated to **capture demand fluctuations.**
+The objective is to apply **time-series modeling** and **causal inference** to quantify whether sales **significantly increase around payday periods (15th and end of month)**, and to measure the **magnitude of the lift** across **product categories** and **store clusters.** External factors like **holidays, oil prices,** and **store transactions** are incorporated to **capture demand fluctuations.**
 
 The analysis provides evidence-based guidance on when to **increase inventory, adjust promotion schedules,** and **optimize staffing,** turning raw transaction data into actionable business strategy.
 
@@ -47,9 +47,27 @@ The analysis provides evidence-based guidance on when to **increase inventory, a
 ### Data Sources
 Dataset used in this project: [Corporación Favorita Grocery Sales Forecasting](https://www.kaggle.com/competitions/favorita-grocery-sales-forecasting/data)
 
+It spans from 2013-01-01 to 2017-08-15. 
+
+External factors:
+
+```train.csv``` : Target variable (unit_sales) at store–item–day level.
+
+```transactions.csv``` : Number of daily transactions per store.
+
+```oil.csv``` :  Daily oil price in Ecuador, capturing macroeconomic effects.
+
+```holidays_events.csv``` :  National and regional holidays/events.
+
+```stores.csv``` : Store metadata (city, state, type, cluster).
+
+```items.csv``` : Item metadata (family/category, class, perishability).
+
+```test.csv and sample_submission.csv``` : Not used in this analysis.
+
 
 > [!NOTE]
-> All files are provided in ``` .7z ``` compressed format on Kaggle. The uncompressed, unzipped files ``` .csv ``` files are used throughout this project.
+> All files are provided in ``` .7z ``` compressed format on Kaggle. The uncompressed, unzipped ``` .csv ``` files are used throughout this project.
 
 
 ### Tools & Stack
