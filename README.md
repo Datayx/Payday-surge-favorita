@@ -29,7 +29,7 @@ Corporación Favorita’s operations and merchandising teams noticed spikes arou
 Understanding whether these spikes are real and quantifiable is key for planning and resource allocation.  
 
 Key questions are:
-- **Do sales actually increase during these periods, and by how much? ?**  
+- **Do sales actually increase during these periods, and by how much?**  
 - **Which categories and stores experience the largest lift?**  
 - **How can these insights guide inventory planning, promotion timing, and staffing decisions?**
 
