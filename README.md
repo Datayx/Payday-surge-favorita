@@ -71,6 +71,15 @@ External factors:
 
 
 ## Tools & Stack
+Environment: Python 3.11, Conda
+Data Handling: Pandas, NumPy
+Visualization: Matplotlib, Tableu, seaborn
+Forecasting and ML: Statsmodels, Scikit-learn, pmdarima
+Orchestration: Apache Airflow, SQLAlchemy
+Database and Storage: Snowflake
+Containerization and Deployment: Docker
+Dev tools: VS Code, Jupyter
+
 ## Data Preparation
 ## Exploratory Data Analysis (EDA)
 ## Key Findings
