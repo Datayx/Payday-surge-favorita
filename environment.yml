@@ -1,1 +1,43 @@
+name: favorita-payday
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core
+  - python=3.10
 
+  # Data handling
+  - pandas
+  - numpy
+  - pyarrow
+  - fastparquet
+
+  # Visualization
+  - matplotlib
+  - seaborn
+  - plotly
+
+  # Forecasting & ML
+  - statsmodels
+  - scikit-learn
+  - pmdarima
+  - prophet
+
+  # Workflow / Orchestration
+  - apache-airflow
+  - sqlalchemy
+
+  # Database connectors
+  - snowflake-connector-python
+  - psycopg2
+  - sqlite
+
+  # Dev tools
+  - jupyterlab
+  - ipykernel
+  - pip
+
+  - pip:
+      - causalimpact
+      - python-dotenv
+      - great-expectations
