@@ -71,30 +71,53 @@ External factors:
 
 
 ## Tools & Stack
--Environment: Python 3.11, Conda.
+**-Environment:** Python 3.11, Conda.
 
--Data Handling: Pandas, NumPy.
+**-Data Handling:** Pandas, NumPy.
 
--Visualization: Matplotlib, Tableu, seaborn.
+**-Visualization:** Matplotlib, Tableu, seaborn.
 
--Forecasting and ML: Statsmodels, Scikit-learn, pmdarima.
+**-Forecasting and ML:** Statsmodels, Scikit-learn, pmdarima.
 
--Orchestration: Apache Airflow, SQLAlchemy
+**-Orchestration:** Apache Airflow, SQLAlchemy.
 
--Database and Storage: Snowflake
+**-Database and Storage:** Snowflake.
 
--Containerization and Deployment: Docker
+**-Containerization and Deployment:** Docker.
 
--Dev tools: VS Code, Jupyter
+**-Dev tools:** VS Code, Jupyter.
 
 ## Data Preparation
+
 ## Exploratory Data Analysis (EDA)
+
 ## Key Findings
+
 ## Recommendations
+
 ## Limitations
+
 ## References & Repo Map
+**Repo:**
+```markdown
+├── configs/                           # Config files YAML 
+├── data/                              # Raw and processed datasets
+├── notebooks/                         # Jupyter notebooks 
+├── results/                           # Outputs
+├── src/                               # Source code
+├── tests/                             # Unit tests for reproducibility and validation
+├── .gitignore                         # Ignore file
+├── LICENSE                            # License
+├── README.md                          # Documentation
+├── environment.yml                    # Conda environment specification
+└── requirements.txt                   # Python dependencies
+```
 
-
+**References:**
+- [Corporación Favorita Grocery Sales Forecasting Dataset](https://www.kaggle.com/competitions/favorita-grocery-sales-forecasting)  
+- [CausalImpact Documentation](https://google.github.io/CausalImpact/)  
+- [Apache Airflow Documentation](https://airflow.apache.org/docs/)  
+- [Snowflake Documentation](https://docs.snowflake.com/)  
 
 ---
 
