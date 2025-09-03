@@ -155,9 +155,9 @@ python scripts/run_pipeline.py
 ```
 
  ## Contributing
-This is a **portfolio project** created to showcase data engineering and data science workflows.  
+This project is created to showcase data engineering and data science workflows.  
 Issues and pull requests are not actively monitored.  
-You are welcome to fork the repository for your own learning or adaptation.
+Feel free to fork the repository for your own learning or adaptation.
 
 
  ## License
