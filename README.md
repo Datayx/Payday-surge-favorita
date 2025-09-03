@@ -115,7 +115,7 @@ External factors:
 
 **References:**
 - [Corporación Favorita Grocery Sales Forecasting Dataset](https://www.kaggle.com/competitions/favorita-grocery-sales-forecasting)  
-- [CausalImpact Documentation](https://google.github.io/CausalImpact/)  
+- [Causal Impact Documentation](https://google.github.io/CausalImpact/)  
 - [Apache Airflow Documentation](https://airflow.apache.org/docs/)  
 - [Snowflake Documentation](https://docs.snowflake.com/)  
 
