@@ -24,7 +24,7 @@
 ---
 
 
-### Business Question
+## Business Question
 Corporación Favorita’s operations and merchandising teams noticed spikes around Ecuadorian paydays (15th and end-of-month), when most workers get paid. 
 Understanding whether these spikes are real and quantifiable is key for planning and resource allocation.  
 
@@ -35,7 +35,7 @@ Key questions are:
 
 
   
-### Project Overview
+## Project Overview
 
 This project analyzes **4.6 years of daily sales** across **54 stores** and **4036 product categorie**s to detect **reliable demand patterns.**
 
@@ -44,7 +44,7 @@ The objective is to apply **time-series modeling** and **causal inference** to q
 The analysis provides evidence-based guidance on when to **increase inventory, adjust promotion schedules,** and **optimize staffing,** turning raw transaction data into actionable business strategy.
 
 
-### Data Sources
+## Data Sources
 Dataset used in this project: [Corporación Favorita Grocery Sales Forecasting](https://www.kaggle.com/competitions/favorita-grocery-sales-forecasting/data)
 
 It spans from 2013-01-01 to 2017-08-15. 
@@ -70,13 +70,13 @@ External factors:
 > All files are provided in ``` .7z ``` compressed format on Kaggle. The uncompressed, unzipped ``` .csv ``` files are used throughout this project.
 
 
-### Tools & Stack
-### Data Preparation
-### Exploratory Data Analysis (EDA)
-### Key Findings
-### Recommendations
-### Limitations
-### References & Repo Map
+## Tools & Stack
+## Data Preparation
+## Exploratory Data Analysis (EDA)
+## Key Findings
+## Recommendations
+## Limitations
+## References & Repo Map
 
 
 
@@ -95,7 +95,7 @@ External factors:
 
 ---
 
- ### Installation
+ ## Installation
 Clone the repository and install dependencies:
 
 ```bash
@@ -108,19 +108,19 @@ pip install -r requirements.txt
 ```
 
 
- ### Usage
+ ## Usage
 Run the full pipeline:
 
 ```bash
 python scripts/run_pipeline.py
 ```
 
- ### Contributing
+ ## Contributing
 This is a **portfolio project** created to showcase data engineering and data science workflows.  
 Issues and pull requests are not actively monitored.  
 You are welcome to fork the repository for your own learning or adaptation.
 
 
- ### License
+ ## License
 This project is licensed under the [MIT License](./LICENSE).
 
