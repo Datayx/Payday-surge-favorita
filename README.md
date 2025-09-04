@@ -98,7 +98,13 @@ External factors:
 ## Limitations
 
 ## References & Repo Map
-**Repo:**
+**References:**
+- [Corporación Favorita Grocery Sales Forecasting Dataset](https://www.kaggle.com/competitions/favorita-grocery-sales-forecasting)  
+- [Causal Impact Documentation](https://google.github.io/CausalImpact/)  
+- [Apache Airflow Documentation](https://airflow.apache.org/docs/)  
+- [Snowflake Documentation](https://docs.snowflake.com/)
+  
+**Repo Map:**
 ```markdown
 ├── configs/                           # Config files YAML 
 ├── data/                              # Raw and processed datasets
@@ -112,12 +118,6 @@ External factors:
 ├── environment.yml                    # Conda environment specification
 └── requirements.txt                   # Python dependencies
 ```
-
-**References:**
-- [Corporación Favorita Grocery Sales Forecasting Dataset](https://www.kaggle.com/competitions/favorita-grocery-sales-forecasting)  
-- [Causal Impact Documentation](https://google.github.io/CausalImpact/)  
-- [Apache Airflow Documentation](https://airflow.apache.org/docs/)  
-- [Snowflake Documentation](https://docs.snowflake.com/)  
 
 ---
 
