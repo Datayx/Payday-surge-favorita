@@ -81,19 +81,22 @@ External factors:
 
 **-Orchestration:** Apache Airflow, SQLAlchemy.
 
-**-Database and Storage:** Snowflake.
+**-Database and Storage:** Snowflake, Parquet.
 
 **-Containerization and Deployment:** Docker.
 
 **-Dev tools:** VS Code, Jupyter.
 
 ## Data Preparation
+Raw ``` train.csv ``` shows daily sales per store and product family but **does not include rows for items that had zero ```unit_sales```. Meaning that if an an ```item-nbr``` was sold 0 units, the row would not exist, creating sparsity. This might lead to overrepresented active sales periods.
+To deal with this issue, I've decided to keep the dataset(sparse format) as this gives faster experimentation (avoid dealing with billions of rows).
 
 ## Exploratory Data Analysis (EDA)
 
 ## Key Findings
 
 ## Recommendations
+Forecasting experiments to deal with train csv note.
 
 ## Limitations
 
@@ -103,6 +106,9 @@ External factors:
 - [Causal Impact Documentation](https://google.github.io/CausalImpact/)  
 - [Apache Airflow Documentation](https://airflow.apache.org/docs/)  
 - [Snowflake Documentation](https://docs.snowflake.com/)
+- [1st Place LGB Model(public:0.506, private:0.511)](https://www.kaggle.com/code/shixw125/1st-place-lgb-model-public-0-506-private-0-511)
+- [web-traffic-forecasting](https://github.com/sjvasquez/web-traffic-forecasting/blob/master/cnn.py)
+- [DuckDB](https://duckdb.org/docs/stable/sql/introduction)
   
 **Repo Map:**
 ```markdown
