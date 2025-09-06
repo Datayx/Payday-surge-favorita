@@ -167,5 +167,5 @@ Feel free to fork the repository for your own learning or adaptation.
 
 
  ## License
-This project is licensed under the [MIT License](./LICENSE).
+This project is licensed under the [MIT License](./LICENSE)..
 
