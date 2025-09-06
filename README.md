@@ -88,7 +88,7 @@ External factors:
 **-Dev tools:** VS Code, Jupyter.
 
 ## Data Preparation
-Raw ``` train.csv ``` shows daily sales per store and product family but **does not include rows for items that had zero ```unit_sales```. Meaning that if an an ```item-nbr``` was sold 0 units, the row would not exist, creating sparsity. This might lead to overrepresented active sales periods.
+Raw ``` train.csv ``` shows daily sales per store and product family but **does not include rows for items that had zero** ```unit_sales```. Meaning that if an an ```item-nbr``` was sold 0 units, the row would not exist, creating sparsity. This might lead to overrepresented active sales periods.
 To deal with this issue, I've decided to keep the dataset(sparse format) as this gives faster experimentation (avoid dealing with billions of rows).
 
 ## Exploratory Data Analysis (EDA)
