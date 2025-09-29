@@ -104,6 +104,8 @@ The raw `train.csv` (~670MB) and `test.csv` (~120MB) exceed GitHub’s file size
 - High-volume stores show clearer payday spikes.
 
 ![Category Uplift](results/figures/category_lift.png)  
+![Category Uplift](results/figures/category_lift_top15.png)  
+![Store Uplift](results/figures/store_lift_top15.png)  
 
 📊 [Explore Interactive Dashboard](https://public.tableau.com/shared/JD8ZSGG8R?:display_count=n&:origin=viz_share_link)
 
