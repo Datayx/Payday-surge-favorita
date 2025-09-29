@@ -101,7 +101,9 @@ The raw `train.csv` (~670MB) and `test.csv` (~120MB) exceed GitHub’s file size
 
 - Payday periods lift average daily sales by **+1.4%**.  
 - Strongest uplift: *Beverages* and *Bakery*.  
-- High-volume stores show clearer payday spikes.  
+- High-volume stores show clearer payday spikes.
+
+![Category Uplift](results/figures/category_lift.png)  
 
 📊 [Explore Interactive Dashboard](https://public.tableau.com/shared/JD8ZSGG8R?:display_count=n&:origin=viz_share_link)
 
