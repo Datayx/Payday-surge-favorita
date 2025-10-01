@@ -15,8 +15,7 @@
 - [Data Sources](#data-sources)
 - [Tools & Stack](#tools--stack)
 - [Data Preparation](#data-preparation)
-- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-- [Key Findings](#key-findings)
+- [Key Findings & Insights](#key-findings-&-insights)
 - [Recommendations](#recommendations)
 - [Limitations](#limitations)
 - [References & Repo Map](#references--repo-map)
@@ -106,9 +105,8 @@ To deal with this issue, I've decided to keep the dataset(sparse format) as this
 The raw `train.csv` (~670MB) and `test.csv` (~120MB) exceed GitHub’s file size limits therefore they are **not included in this repository**.  
 
 
-## Exploratory Data Analysis (EDA)
 
-## Key Findings
+## Key Findings and Insights
 ![Payday vs Non-Payday Sales](results/figures/payday_vs_nonpayday.png)  
 
 - Payday periods lift average daily sales by **+1.4%**.  
