@@ -1,12 +1,13 @@
 # Payday Surge Analysis – Corporación Favorita
 *Causal analysis of Ecuadorian grocery demand surges around payday for data-driven inventory, promo, and staffing decisions.*
 
-![Python](https://img.shields.io/badge/Python-3.10-blue) 
-![Pandas](https://img.shields.io/badge/Pandas-EDA-lightblue)
-![Statsmodels](https://img.shields.io/badge/Statsmodels-CausalImpact-green)
-![Apache Airflow](https://img.shields.io/badge/Airflow-Orchestration-orange)
-![Snowflake](https://img.shields.io/badge/Snowflake-Data%20Warehouse-lightblue)
-![Docker](https://img.shields.io/badge/Docker-Containerization-blue)
+[![Python](https://img.shields.io/badge/Python-3.11-blue)](requirements.txt)
+[![Pandas](https://img.shields.io/badge/Pandas-Data-lightblue)](https://pandas.pydata.org/docs/)
+[![Statsmodels](https://img.shields.io/badge/Statsmodels-TimeSeries-green)](https://www.statsmodels.org/)
+[![CausalImpact](https://img.shields.io/badge/CausalImpact-CausalAnalysis-brightgreen)](https://github.com/google/CausalImpact)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-yellow)](https://matplotlib.org/stable/)
+[![Tableau](https://img.shields.io/badge/Tableau-Dashboards-orange)](results/tableau/)
+
 
 
 ## Table of Contents
@@ -82,21 +83,18 @@ To fully rerun from raw:
 
 
 ## Tools & Stack
-**-Environment:** Python 3.11, Conda.
 
-**-Data Handling:** Pandas, NumPy.
+- **Environment:** Python 3.11, Conda/venv, VS Code, Jupyter, Git  
+- **Data Handling & Storage:** Pandas, NumPy, PyArrow, Parquet, DuckDB (SQL)  
+- **Modeling & Forecasting:** Statsmodels (SARIMAX), CausalImpact, scikit-learn, pmdarima  
+- **Visualization & Reporting:** Matplotlib, Seaborn, Tableau  
+- **Orchestration & Pipelines (light):** Apache Airflow (stub DAGs), dbt (DuckDB scaffold)  
+- **Containerization (light):** Docker (stub Dockerfile for reproducibility)  
+- **Warehouse (light):** Snowflake / BigQuery (config scaffolds, not integrated)
 
-**-Visualization:** Matplotlib, Tableu, seaborn.
 
-**-Forecasting and ML:** Statsmodels, Scikit-learn, pmdarima.
 
-**-Orchestration:** Apache Airflow, SQLAlchemy.
 
-**-Database and Storage:** Snowflake, Parquet.
-
-**-Containerization and Deployment:** Docker.
-
-**-Dev tools:** VS Code, Jupyter.
 
 ## Data Preparation
 Raw ``` train.csv ``` shows daily sales per store and product family but **does not include rows for items that had zero** ```unit_sales```. Meaning that if an an ```item-nbr``` was sold 0 units, the row would not exist, creating sparsity. This might lead to overrepresented active sales periods.
@@ -107,6 +105,11 @@ The raw `train.csv` (~670MB) and `test.csv` (~120MB) exceed GitHub’s file size
 
 
 ## Key Findings and Insights
+> Full exploratory notebooks are available under [`notebooks/01_Data_preparation.ipynb`](notebooks/01_Data_preparation.ipynb).  
+> Below are the main insights extracted from that exploration.
+
+📊 [Explore Interactive Dashboard](https://public.tableau.com/shared/JD8ZSGG8R?:display_count=n&:origin=viz_share_link)
+
 ![Payday vs Non-Payday Sales](results/figures/payday_vs_nonpayday.png)  
 
 - Payday periods lift average daily sales by **+1.4%**.  
@@ -117,23 +120,30 @@ The raw `train.csv` (~670MB) and `test.csv` (~120MB) exceed GitHub’s file size
 ![Category Uplift](results/figures/category_lift_top15.png)  
 ![Store Uplift](results/figures/store_lift_top15.png)  
 
-📊 [Explore Interactive Dashboard](https://public.tableau.com/shared/JD8ZSGG8R?:display_count=n&:origin=viz_share_link)
-
 
 ## Recommendations
-Forecasting experiments to deal with train csv note.
+- **High Impact:** Allocate extra inventory to top surge categories; ensure replenishment on payday and the following day.
+- **Medium Impact:** Add short shifts in the top-lift stores during payday periods.
+- **Low Impact:** Run targeted promos on discretionary categories that show strong lift.
+
 
 ## Limitations
+- Dataset scope: Ecuador, 2013–2017. External shocks not fully modeled.
+- No forecasting baseline included (e.g., seasonal-naive, SARIMAX). Results show correlations,
+  not causal effects beyond normal weekly seasonality.
+- Next:
+  - Automate refresh with **Airflow + Snowflake**.
+  - Containerize pipeline with **Docker** to ensure reproducibility and easy deployment across environments. 
+  - Refit with newer data and validate seasonality/holiday controls.
 
 ## References & Repo Map
 **References:**
 - [Corporación Favorita Grocery Sales Forecasting Dataset](https://www.kaggle.com/competitions/favorita-grocery-sales-forecasting)  
 - [Causal Impact Documentation](https://google.github.io/CausalImpact/)  
 - [Apache Airflow Documentation](https://airflow.apache.org/docs/)  
-- [Snowflake Documentation](https://docs.snowflake.com/)
 - [1st Place LGB Model(public:0.506, private:0.511)](https://www.kaggle.com/code/shixw125/1st-place-lgb-model-public-0-506-private-0-511)
 - [web-traffic-forecasting](https://github.com/sjvasquez/web-traffic-forecasting/blob/master/cnn.py)
-- [DuckDB](https://duckdb.org/docs/stable/sql/introduction)
+
   
 **Repo Map:**
 ```markdown
