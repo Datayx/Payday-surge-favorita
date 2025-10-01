@@ -66,6 +66,18 @@ External factors:
 ```test.csv and sample_submission.csv``` : Not used in this analysis.
 
 
+The original Corporación Favorita dataset (train/test CSVs) is **not included** in this repo due to size constraints (hundreds of MBs, exceeds GitHub’s limits).  
+
+- Omitted: `train.csv`, `test.csv`  
+- Included: processed parquet outputs (`data/processed/`), sufficient to reproduce analysis  
+
+To fully rerun from raw:  
+1. Download from Kaggle: [Favorita Grocery Sales Forecasting](https://www.kaggle.com/competitions/favorita-grocery-sales-forecasting).  
+2. Place into `data/raw/`.  
+3. Re-run `01_Data_preparation.ipynb`.  
+
+
+
 > [!NOTE]
 > All files are provided in ``` .7z ``` compressed format on Kaggle. The uncompressed, unzipped ``` .csv ``` files are used throughout this project.
 
