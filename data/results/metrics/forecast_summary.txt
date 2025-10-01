@@ -1,0 +1,12 @@
+## Forecast Summary
+- MAE (model): 59,561
+- MAE (seasonal-naive, 7D): 112,577  → Improvement vs naive: 47.1%
+- SMAPE: 6.7%
+- Payday diagnostic: residuals 27.2% lower → spikes largely captured.
+
+## Recommendations
+- Keep SARIMAX as baseline; add exogenous flags (payday, holidays, promos).
+- Track weekly MAE vs seasonal-naive to detect drift.
+
+## Ops/Scale
+- Rows: 125,497,040 | Days: 1,688 | ~1,914.9 MB | Runtime: 0.0s

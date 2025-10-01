@@ -1,0 +1,7 @@
+payday_profile:
+  target: prod
+  outputs:
+    prod:
+      type: duckdb
+      path: /opt/airflow/dags/dbt/payday.duckdb
+      threads: 4

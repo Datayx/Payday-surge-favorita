@@ -1,0 +1,12 @@
+name: payday_dbt
+version: 1.0.0
+config-version: 2
+
+profile: payday_profile
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target"]
+
+models:
+  payday_dbt:
+    +materialized: view

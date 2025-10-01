@@ -143,6 +143,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+logs/
 
 # Spyder project settings
 .spyderproject
@@ -220,3 +221,6 @@ results/*.pkl
 results/*.h5
 results/*.csv
 
+airflow/dags/dbt/target/
+airflow/dags/dbt/*.duckdb
+airflow/__pycache__/

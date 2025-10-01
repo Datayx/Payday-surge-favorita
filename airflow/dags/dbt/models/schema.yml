@@ -1,0 +1,6 @@
+version: 2
+models:
+  - name: example
+    tests:
+      - not_null:
+          column_name: run_date
