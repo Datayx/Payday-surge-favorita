@@ -66,6 +66,18 @@ External factors:
 ```test.csv and sample_submission.csv``` : Not used in this analysis.
 
 
+The original Corporación Favorita dataset (train/test CSVs) is **not included** in this repo due to size constraints (hundreds of MBs, exceeds GitHub’s limits).  
+
+- Omitted: `train.csv`, `test.csv`  
+- Included: processed parquet outputs (`data/processed/`), sufficient to reproduce analysis  
+
+To fully rerun from raw:  
+1. Download from Kaggle: [Favorita Grocery Sales Forecasting](https://www.kaggle.com/competitions/favorita-grocery-sales-forecasting).  
+2. Place into `data/raw/`.  
+3. Re-run `01_Data_preparation.ipynb`.  
+
+
+
 > [!NOTE]
 > All files are provided in ``` .7z ``` compressed format on Kaggle. The uncompressed, unzipped ``` .csv ``` files are used throughout this project.
 
@@ -91,9 +103,24 @@ External factors:
 Raw ``` train.csv ``` shows daily sales per store and product family but **does not include rows for items that had zero** ```unit_sales```. Meaning that if an an ```item-nbr``` was sold 0 units, the row would not exist, creating sparsity. This might lead to overrepresented active sales periods.
 To deal with this issue, I've decided to keep the dataset(sparse format) as this gives faster experimentation (avoid dealing with billions of rows).
 
+The raw `train.csv` (~670MB) and `test.csv` (~120MB) exceed GitHub’s file size limits therefore they are **not included in this repository**.  
+
+
 ## Exploratory Data Analysis (EDA)
 
 ## Key Findings
+![Payday vs Non-Payday Sales](results/figures/payday_vs_nonpayday.png)  
+
+- Payday periods lift average daily sales by **+1.4%**.  
+- Strongest uplift: *Beverages* and *Bakery*.  
+- High-volume stores show clearer payday spikes.
+
+![Category Uplift](results/figures/category_lift.png)  
+![Category Uplift](results/figures/category_lift_top15.png)  
+![Store Uplift](results/figures/store_lift_top15.png)  
+
+📊 [Explore Interactive Dashboard](https://public.tableau.com/shared/JD8ZSGG8R?:display_count=n&:origin=viz_share_link)
+
 
 ## Recommendations
 Forecasting experiments to deal with train csv note.
