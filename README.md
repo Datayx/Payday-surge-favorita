@@ -16,7 +16,7 @@
 - [Data Sources](#data-sources)
 - [Tools & Stack](#tools--stack)
 - [Data Preparation](#data-preparation)
-- [Key Findings & Insights](#key-findings-&-insights)
+- [Key Findings & Insights](#key-findings--insights)
 - [Recommendations](#recommendations)
 - [Limitations](#limitations)
 - [References & Repo Map](#references--repo-map)
