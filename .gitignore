@@ -224,3 +224,5 @@ results/*.csv
 airflow/dags/dbt/target/
 airflow/dags/dbt/*.duckdb
 airflow/__pycache__/
+
+data/processed/*.parquet
