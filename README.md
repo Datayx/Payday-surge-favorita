@@ -147,17 +147,23 @@ The raw `train.csv` (~670MB) and `test.csv` (~120MB) exceed GitHub’s file size
   
 **Repo Map:**
 ```markdown
-├── configs/                           # Config files YAML 
-├── data/                              # Raw and processed datasets
-├── notebooks/                         # Jupyter notebooks 
-├── results/                           # Outputs
-├── src/                               # Source code
-├── tests/                             # Unit tests for reproducibility and validation
-├── .gitignore                         # Ignore file
-├── LICENSE                            # License
-├── README.md                          # Documentation
-├── environment.yml                    # Conda environment specification
-└── requirements.txt                   # Python dependencies
+Repo Map:
+├─ .vscode/         # VS Code settings (launch configs, workspace)
+├─ airflow/         # Airflow DAGs, DBT scaffolding, orchestration files
+├─ configs/         # YAML config files
+├─ data/            # Raw and processed datasets (tracked with Git LFS)
+├─ notebooks/       # Jupyter notebooks for exploration & analysis
+├─ results/         # Outputs (figures, KPIs, dashboards)
+├─ sql/             # SQL queries and transformations
+├─ src/             # Source code (utility functions, pipeline scripts)
+├─ tests/           # Unit tests for reproducibility & validation
+├─ .gitattributes   # Git LFS tracking rules
+├─ .gitignore       # Files to ignore in Git
+├─ LICENSE          # License
+├─ README.md        # Documentation
+├─ environment.yml  # Conda environment specification
+└─ requirements.txt # Python dependencies
+
 ```
 
 ---
