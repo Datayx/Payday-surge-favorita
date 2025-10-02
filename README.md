@@ -20,6 +20,7 @@
 - [Recommendations](#recommendations)
 - [Limitations](#limitations)
 - [References & Repo Map](#references--repo-map)
+- [Project Setup](#project-setup)
 
 ---
 
