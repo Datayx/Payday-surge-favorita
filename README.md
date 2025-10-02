@@ -16,7 +16,7 @@
 - [Data Sources](#data-sources)
 - [Tools & Stack](#tools--stack)
 - [Data Preparation](#data-preparation)
-- [Key Findings & Insights](#key--findings--insights)
+- [Key Findings](#key-findings)
 - [Recommendations](#recommendations)
 - [Limitations](#limitations)
 - [References & Repo Map](#references--repo-map)
@@ -104,7 +104,7 @@ The raw `train.csv` (~670MB) and `test.csv` (~120MB) exceed GitHub’s file size
 
 
 
-## Key Findings & Insights
+## Key Findings
 > Full exploratory notebooks are available under [`notebooks/01_Data_preparation.ipynb`](notebooks/01_Data_preparation.ipynb).  
 > Below are the main insights extracted from that exploration.
 
