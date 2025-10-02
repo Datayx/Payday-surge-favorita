@@ -104,7 +104,7 @@ The raw `train.csv` (~670MB) and `test.csv` (~120MB) exceed GitHub’s file size
 
 
 
-## Key Findings and Insights
+## Key Findings & Insights
 > Full exploratory notebooks are available under [`notebooks/01_Data_preparation.ipynb`](notebooks/01_Data_preparation.ipynb).  
 > Below are the main insights extracted from that exploration.
 
