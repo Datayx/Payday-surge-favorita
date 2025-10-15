@@ -6,7 +6,7 @@
 [![Statsmodels](https://img.shields.io/badge/Statsmodels-TimeSeries-green)](https://www.statsmodels.org/)
 [![CausalImpact](https://img.shields.io/badge/CausalImpact-CausalAnalysis-brightgreen)](https://github.com/google/CausalImpact)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-yellow)](https://matplotlib.org/stable/)
-[![Tableau](https://img.shields.io/badge/Tableau-Dashboards-orange)](results/tableau/)
+[![Tableau](https://img.shields.io/badge/Tableau-Dashboards-orange)](https://public.tableau.com/shared/WTR4YX785?:display_count=n&:origin=viz_share_link)
 
 
 
